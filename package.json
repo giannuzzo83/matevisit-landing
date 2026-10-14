@@ -1,0 +1,14 @@
+{
+  "name": "matevisit-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Coming soon page for matevisit.com (Cloudflare Pages).",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "check": "node scripts/build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

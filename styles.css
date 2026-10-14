@@ -1,0 +1,117 @@
+:root {
+  color-scheme: light;
+  --ink: #192b32;
+  --muted: #5e717a;
+  --teal: #087c83;
+  --teal-dark: #075e63;
+  --pale: #e6f4f1;
+  --cream: #fcfbf7;
+  --border: #dce7e4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.shell {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px 32px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  width: min(520px, 90vw);
+  height: min(520px, 90vw);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(8, 124, 131, 0.18) 0%, transparent 70%);
+  top: 8%;
+  pointer-events: none;
+}
+
+.brand {
+  margin-bottom: 28px;
+  z-index: 1;
+}
+
+.brand-name {
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.brand-name .accent {
+  color: var(--teal);
+}
+
+.brand-name .degree {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--teal-dark);
+  font-size: 0.85em;
+  vertical-align: super;
+}
+
+.tagline {
+  margin: 0 0 12px;
+  font-size: clamp(1.35rem, 4.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
+  max-width: 18ch;
+  z-index: 1;
+}
+
+.status {
+  margin: 0 0 28px;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  font-weight: 700;
+  color: var(--teal-dark);
+  z-index: 1;
+}
+
+.note {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  z-index: 1;
+}
+
+.footer {
+  margin-top: 48px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .shell {
+    padding-top: 64px;
+  }
+
+  .note {
+    font-size: 0.9rem;
+  }
+}

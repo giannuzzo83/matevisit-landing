@@ -1,7 +1,7 @@
 import { access } from 'node:fs/promises';
 import { constants } from 'node:fs';
 
-const required = ['index.html', 'styles.css', 'favicon.svg'];
+const required = ['index.html', 'privacy/index.html', 'styles.css', 'favicon.svg'];
 
 for (const file of required) {
   await access(file, constants.R_OK);

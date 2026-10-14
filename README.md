@@ -23,6 +23,8 @@ npm run check
 
 Lo script `build` è un no-op di validazione: **non genera una cartella `dist`**.
 
+Opzionale: puoi aggiungere un workflow GitHub Actions che esegue `npm run check` su ogni push (richiede scope `workflow` sul token di push).
+
 ## Deploy su Cloudflare Pages (GitHub)
 
 | Impostazione | Valore |

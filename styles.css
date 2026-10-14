@@ -104,6 +104,101 @@ body {
   text-transform: uppercase;
   color: var(--muted);
   z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-privacy {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.7rem;
+  opacity: 0.85;
+}
+
+.footer-privacy:hover,
+.footer-privacy:focus-visible {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
+
+.privacy-shell {
+  min-height: 100dvh;
+  padding: 32px 20px 40px;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.privacy-brand {
+  margin-bottom: 24px;
+}
+
+.privacy-home {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.privacy-home .accent {
+  color: var(--teal);
+}
+
+.privacy-home .degree {
+  font-weight: 700;
+  color: var(--teal-dark);
+  font-size: 0.85em;
+  vertical-align: super;
+}
+
+.privacy-doc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.privacy-doc h1 {
+  font-size: 1.5rem;
+  margin: 0 0 16px;
+}
+
+.privacy-doc h2 {
+  font-size: 1.05rem;
+  margin: 28px 0 10px;
+  color: var(--teal-dark);
+}
+
+.privacy-doc p,
+.privacy-doc ul {
+  margin: 0 0 12px;
+}
+
+.privacy-doc ul {
+  padding-left: 1.25rem;
+}
+
+.privacy-lead {
+  color: var(--muted);
+}
+
+.privacy-doc a {
+  color: var(--teal-dark);
+}
+
+.privacy-back {
+  margin-top: 32px;
+}
+
+.privacy-footer {
+  margin-top: 40px;
+  justify-content: flex-start;
+  text-transform: uppercase;
 }
 
 @media (max-width: 480px) {

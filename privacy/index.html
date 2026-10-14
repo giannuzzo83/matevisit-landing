@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Informativa sulla privacy del POC MateVisit." />
+    <title>Privacy — MateVisit</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="privacy-shell">
+      <header class="privacy-brand" aria-label="MateVisit">
+        <a href="/" class="privacy-home">
+          Mate<span class="accent">Visit</span><span class="degree">°</span>
+        </a>
+      </header>
+      <article class="privacy-doc">
+        <h1>Informativa sulla privacy</h1>
+        <p class="privacy-lead">
+          Questa informativa descrive il trattamento dei dati personali nell&apos;ambito del <strong>POC (prova
+          tecnica)</strong> MateVisit collegato all&apos;app Meta &laquo;MateVisit POC&raquo;, finalizzato a testare la
+          ricezione di messaggi WhatsApp in entrata. Non costituisce l&apos;informativa del servizio MateVisit in
+          produzione.
+        </p>
+        <p><strong>Ultimo aggiornamento:</strong> 14 ottobre 2026</p>
+
+        <h2>Titolare del trattamento</h2>
+        <p>
+          <strong>MateVisit</strong><br />
+          Contatto privacy: <a href="mailto:matevisit@gmail.com">matevisit@gmail.com</a>
+        </p>
+
+        <h2>Dati trattati</h2>
+        <p>Nel POC possono essere trattati, limitatamente al test del servizio:</p>
+        <ul>
+          <li>il <strong>numero di telefono WhatsApp</strong> e gli identificativi tecnici associati al messaggio in
+            entrata;</li>
+          <li>il <strong>contenuto dei messaggi in arrivo</strong> che invii volontariamente al numero di test collegato
+            al POC (necessario per verificare la corretta ricezione e classificazione tecnica dell&apos;identità).</li>
+        </ul>
+        <p>
+          I sistemi del POC sono configurati per <strong>non registrare in log</strong> il testo integrale dei messaggi
+          né altri dati identificativi in chiaro; vengono conservati solo metadati tecnici con dati
+          <strong>oscurati o ridotti</strong> (ad esempio classificazione del tipo di identità e identificativo di
+          correlazione non reversibile).
+        </p>
+
+        <h2>Finalità e base giuridica</h2>
+        <p>
+          Il trattamento serve esclusivamente a <strong>verificare in ambiente di test</strong> l&apos;integrazione con
+          WhatsApp Business Platform (ricezione webhook, sicurezza, deduplicazione) prima di un eventuale servizio
+          pubblico.
+        </p>
+        <p>
+          La base giuridica è il <strong>legittimo interesse</strong> del titolare a condurre prove tecniche sicure e
+          limitate (art. 6, par. 1, lett. f GDPR), nonché, ove applicabile, l&apos;<strong>esecuzione di misure
+          precontrattuali</strong> su tua richiesta quando partecipi volontariamente al test.
+        </p>
+
+        <h2>Conservazione</h2>
+        <ul>
+          <li>
+            <strong>Log tecnici</strong> del Worker di ingresso: metadati con dati personali oscurati o non persistiti in
+            chiaro; conservazione limitata alle esigenze di diagnosi del POC.
+          </li>
+          <li>
+            <strong>Deduplicazione messaggi</strong> su infrastruttura Cloudflare (KV): conservazione fino a
+            <strong>7 giorni</strong>, per evitare elaborazioni duplicate dello stesso evento.
+          </li>
+        </ul>
+        <p>Al termine del POC i dati conservati per il test saranno cancellati o anonimizzati, salvo obblighi di legge.</p>
+
+        <h2>Destinatari e trasferimenti</h2>
+        <p>
+          I dati transitano e possono essere trattati da fornitori strettamente necessari al POC, in qualità di
+          responsabili del trattamento o sub-responsabili:
+        </p>
+        <ul>
+          <li><strong>Meta Platforms Ireland Ltd.</strong> (WhatsApp Business Platform), per l&apos;invio dei webhook
+            dei messaggi in entrata;</li>
+          <li><strong>Cloudflare, Inc.</strong>, per hosting del sito, del Worker di ingresso e servizi KV associati al
+            POC.</li>
+        </ul>
+        <p>
+          <strong>Non vendiamo</strong> i tuoi dati e <strong>non li cediamo a terzi</strong> per finalità di marketing
+          oltre a quanto sopra.
+        </p>
+
+        <h2>Diritti dell&apos;interessato</h2>
+        <p>
+          In qualità di interessato hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e
+          portabilità (nei casi previsti), nonché di proporre reclamo all&apos;
+          <a href="https://www.garanteprivacy.it" rel="noopener noreferrer">Autorità Garante per la protezione dei dati
+          personali</a>.
+        </p>
+        <p>
+          Per esercitare i diritti o chiedere la <strong>cancellazione</strong> dei dati trattati nel POC, scrivi a
+          <a href="mailto:matevisit@gmail.com">matevisit@gmail.com</a> indicando il numero WhatsApp usato nel test e la
+          data approssimativa del messaggio. Risponderemo nei termini di legge.
+        </p>
+
+        <h2>Sicurezza</h2>
+        <p>
+          Il POC adotta misure tecniche quali HTTPS, verifica delle firme dei webhook Meta e limitazione della
+          conservazione dei dati sensibili nei log.
+        </p>
+
+        <p class="privacy-back"><a href="/">← Torna alla home</a></p>
+      </article>
+      <footer class="footer privacy-footer">
+        <span>Milano · POC privacy</span>
+      </footer>
+    </main>
+  </body>
+</html>
